@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		694354B418D0E3A6003DBA38 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 694354B318D0E3A6003DBA38 /* main.cpp */; };
 		694354B618D0E3A6003DBA38 /* WCHT.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 694354B518D0E3A6003DBA38 /* WCHT.1 */; };
+		697471C118D0E43B00F96BD0 /* Convolution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 697471BB18D0E43B00F96BD0 /* Convolution.cpp */; };
+		697471C218D0E43B00F96BD0 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 697471BD18D0E43B00F96BD0 /* Image.cpp */; };
+		697471C318D0E43B00F96BD0 /* Wavelet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 697471BF18D0E43B00F96BD0 /* Wavelet.cpp */; };
+		697471C518D0E4D600F96BD0 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 697471C418D0E4D600F96BD0 /* libpng16.16.dylib */; };
+		697471C918D0E89600F96BD0 /* Accumulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 697471C718D0E89600F96BD0 /* Accumulator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +33,15 @@
 		694354B018D0E3A6003DBA38 /* WCHT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WCHT; sourceTree = BUILT_PRODUCTS_DIR; };
 		694354B318D0E3A6003DBA38 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		694354B518D0E3A6003DBA38 /* WCHT.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WCHT.1; sourceTree = "<group>"; };
+		697471BB18D0E43B00F96BD0 /* Convolution.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Convolution.cpp; sourceTree = "<group>"; };
+		697471BC18D0E43B00F96BD0 /* Convolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convolution.h; sourceTree = "<group>"; };
+		697471BD18D0E43B00F96BD0 /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		697471BE18D0E43B00F96BD0 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		697471BF18D0E43B00F96BD0 /* Wavelet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wavelet.cpp; sourceTree = "<group>"; };
+		697471C018D0E43B00F96BD0 /* Wavelet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wavelet.h; sourceTree = "<group>"; };
+		697471C418D0E4D600F96BD0 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = /usr/local/lib/libpng16.16.dylib; sourceTree = "<absolute>"; };
+		697471C718D0E89600F96BD0 /* Accumulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Accumulator.cpp; sourceTree = "<group>"; };
+		697471C818D0E89600F96BD0 /* Accumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accumulator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697471C518D0E4D600F96BD0 /* libpng16.16.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				694354B218D0E3A6003DBA38 /* WCHT */,
+				697471C618D0E4DE00F96BD0 /* Frameworks */,
 				694354B118D0E3A6003DBA38 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,9 +77,25 @@
 			isa = PBXGroup;
 			children = (
 				694354B318D0E3A6003DBA38 /* main.cpp */,
+				697471C818D0E89600F96BD0 /* Accumulator.h */,
+				697471C718D0E89600F96BD0 /* Accumulator.cpp */,
+				697471BE18D0E43B00F96BD0 /* Image.h */,
+				697471BD18D0E43B00F96BD0 /* Image.cpp */,
+				697471C018D0E43B00F96BD0 /* Wavelet.h */,
+				697471BF18D0E43B00F96BD0 /* Wavelet.cpp */,
+				697471BC18D0E43B00F96BD0 /* Convolution.h */,
+				697471BB18D0E43B00F96BD0 /* Convolution.cpp */,
 				694354B518D0E3A6003DBA38 /* WCHT.1 */,
 			);
 			path = WCHT;
+			sourceTree = "<group>";
+		};
+		697471C618D0E4DE00F96BD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				697471C418D0E4D600F96BD0 /* libpng16.16.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697471C318D0E43B00F96BD0 /* Wavelet.cpp in Sources */,
+				697471C218D0E43B00F96BD0 /* Image.cpp in Sources */,
+				697471C918D0E89600F96BD0 /* Accumulator.cpp in Sources */,
+				697471C118D0E43B00F96BD0 /* Convolution.cpp in Sources */,
 				694354B418D0E3A6003DBA38 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +191,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -187,6 +229,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
@@ -225,6 +273,7 @@
 				694354BB18D0E3A6003DBA38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
