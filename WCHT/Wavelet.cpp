@@ -1,6 +1,6 @@
 //
 //  Wavelet.cpp
-//  PAT
+//  WCHT
 //
 //  This code is distributed under the MIT Licence.
 //  See notice at the end of this file.

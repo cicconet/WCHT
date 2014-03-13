@@ -14,6 +14,7 @@
 		697471C318D0E43B00F96BD0 /* Wavelet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 697471BF18D0E43B00F96BD0 /* Wavelet.cpp */; };
 		697471C518D0E4D600F96BD0 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 697471C418D0E4D600F96BD0 /* libpng16.16.dylib */; };
 		697471C918D0E89600F96BD0 /* Accumulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 697471C718D0E89600F96BD0 /* Accumulator.cpp */; };
+		698070F218D209DF000A5E53 /* LocMax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 698070F018D209DF000A5E53 /* LocMax.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		697471C418D0E4D600F96BD0 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = /usr/local/lib/libpng16.16.dylib; sourceTree = "<absolute>"; };
 		697471C718D0E89600F96BD0 /* Accumulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Accumulator.cpp; sourceTree = "<group>"; };
 		697471C818D0E89600F96BD0 /* Accumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accumulator.h; sourceTree = "<group>"; };
+		698070F018D209DF000A5E53 /* LocMax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocMax.cpp; sourceTree = "<group>"; };
+		698070F118D209DF000A5E53 /* LocMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocMax.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				697471BF18D0E43B00F96BD0 /* Wavelet.cpp */,
 				697471BC18D0E43B00F96BD0 /* Convolution.h */,
 				697471BB18D0E43B00F96BD0 /* Convolution.cpp */,
+				698070F118D209DF000A5E53 /* LocMax.h */,
+				698070F018D209DF000A5E53 /* LocMax.cpp */,
 				694354B518D0E3A6003DBA38 /* WCHT.1 */,
 			);
 			path = WCHT;
@@ -152,6 +157,7 @@
 				697471C318D0E43B00F96BD0 /* Wavelet.cpp in Sources */,
 				697471C218D0E43B00F96BD0 /* Image.cpp in Sources */,
 				697471C918D0E89600F96BD0 /* Accumulator.cpp in Sources */,
+				698070F218D209DF000A5E53 /* LocMax.cpp in Sources */,
 				697471C118D0E43B00F96BD0 /* Convolution.cpp in Sources */,
 				694354B418D0E3A6003DBA38 /* main.cpp in Sources */,
 			);

@@ -1,35 +1,51 @@
 //
-//  Image.h
+//  LocMax.h
 //  WCHT
 //
 //  This code is distributed under the MIT Licence.
 //  See notice at the end of this file.
 //
 
-#ifndef __PAT__Image__
-#define __PAT__Image__
+#ifndef __Triangles__LocMax__
+#define __Triangles__LocMax__
 
 #include <iostream>
+#include <vector>
 #include <math.h>
-#include <png.h>
+#include "Image.h"
 
-class Image {
-private:
-
-public:
-    int width;
-    int height;
+struct GaussKernel {
+	int size;
     float * data;
-    void set_up_with_path(const char * path);
-    void set_up_with_data(float * d, int w, int h);
-    void copy_from_image(Image image);
-    void save_png_to_path(const char * path);
-    void normalize(void);
-    void set_zero(void);
+};
+typedef struct GaussKernel GaussKernel;
+
+typedef struct Point2D {
+    float x;
+    float y;
+} Point2D;
+
+inline Point2D Point2DMake(float x, float y)
+{
+    Point2D p; p.x = x; p.y = y; return p;
+}
+
+class LocMax {
+    GaussKernel set_up_kernel(int halfSize);
+    void clean_up_kernel(GaussKernel kernel);
+    void blur(Image input, GaussKernel kernel, Image output);
+    int nlm;
+    float thr;
+public:
+    Image im;
+    Point2D * locs;
+    int nLocs; // number of local maxima actually found
+    void set_up(Image image, int kernelHalfSize, int nLocMax, float threshold);
+    void find(void);
     void clean_up(void);
 };
 
-#endif /* defined(__PAT__Image__) */
+#endif /* defined(__Triangles__LocMax__) */
 
 //
 // Copyright (c) 2014 Marcelo Cicconet
