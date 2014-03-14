@@ -1,5 +1,7 @@
 Wavelet-Based Circular Hough Transform
 
+Helps finding circles of a particular radius in images.
+
 
 main.cpp
   Demonstration of how to find circles of a particular radius.
